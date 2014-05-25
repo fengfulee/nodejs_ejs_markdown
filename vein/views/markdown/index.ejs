@@ -1,0 +1,99 @@
+<header>
+<h1 id="markdown-">Markdown 基础入门语法</h1>
+
+</header>
+<nav>
+<ul>
+<li class="level3"><a href="#0.1">区块</a></li><li class="level3"><a href="#0.2">链接</a></li><li class="level4"><a href="#0.2.1">强调</a></li><li class="level3"><a href="#0.3">列表</a></li><li class="level4"><a href="#0.3.1">联系我们</a></li><li class="level3"><a href="#0.4">返回首页</a></li></ul>
+
+</nav>
+<article>
+<h3 id="0.1">区块</h3>
+<p>一个段落是由一个以上的连接的行句组成，而一个以上的空行则会划分出不同的段落（空行的定义是显示上看起来像是空行，就被视为空行，例如有一行只有空白和 tab，那该行也会被视为空行），一般的段落不需要用空白或换行缩进。</p>
+<p>Markdown 支持两种标题的语法，Setext 和 atx 形式。Setext 形式是用底线的形式，利用 = （最高阶标题）和 - （第二阶标题），Atx 形式在行首插入 1 到 6 个 # ，对应到标题 1 到 6 阶。</p>
+
+<h3 id="0.2">链接</h3>
+<p>Markdown 支援两种形式的链接语法： 行内 和 参考 两种形式，两种都是使用角括号来把文字转成连结。</p>
+<p>行内形式是直接在后面用括号直接接上链接：</p>
+<p>This is an <a href="http://example.com/">example link</a>.
+输出 HTML 为：</p>
+<p>This is an <a href="http://example.com/">
+example link</a>.</p>
+你也可以选择性的加上 title 属性：
+
+This is an <a href="http://example.com/" title="With a Title">example link</a>.
+输出 HTML 为：
+
+<p>This is an <a href="http://example.com/" title="With a Title">
+example link</a>.</p>
+
+<h4 id="0.2.1">强调</h4>
+<p>Markdown 使用星号和底线来标记需要强调的区段。</p>
+<p>Markdown 语法:</p>
+<p>Some of these words <em>are emphasized</em>.
+Some of these words <em>are emphasized also</em>.
+Use two asterisks for <strong>strong emphasis</strong>.
+Or, if you prefer, <strong>use two underscores instead</strong>.
+输出 HTML 为:</p>
+<p>Some of these words <em>are emphasized</em>.
+Some of these words <em>are emphasized also</em>.</p>
+<p>Use two asterisks for <strong>strong emphasis</strong>.
+Or, if you prefer, <strong>use two underscores instead</strong>.</p>
+
+<h3 id="0.3">列表</h3>
+<p>无序列表使用星号、加号和减号来做为列表的项目标记，这些符号是都可以使用的，使用星号：</p>
+<ul>
+<li>Candy.</li>
+<li>Gum.</li>
+<li><p>Booze.
+加号：</p>
+</li>
+<li><p>Candy.</p>
+</li>
+<li>Gum.</li>
+<li><p>Booze.
+和减号</p>
+</li>
+<li><p>Candy.</p>
+</li>
+<li>Gum.</li>
+<li>Booze.
+都会输出 HTML 为：</li>
+</ul>
+<ul>
+<li>Candy.</li>
+<li>Gum.</li>
+<li>Booze.</li>
+</ul>
+有序的列表则是使用一般的数字接着一个英文句点作为项目标记：
+
+1. Red
+2. Green
+3. Blue
+输出 HTML 为：
+
+<ol>
+<li>Red</li>
+<li>Green</li>
+<li>Blue</li>
+</ol>
+如果你在项目之间插入空行，那项目的内容会用 <p> 包起来，你也可以在一个项目内放上多个段落，只要在它前面缩排 4 个空白或 1 个 tab 。
+
+<em> A list item.
+With multiple paragraphs.
+
+</em> Another item in the list.
+输出 HTML 为：
+
+<ul>
+<li><p>A list item.</p>
+<p>With multiple paragraphs.</p></li>
+<li><p>Another item in the list.</p></li>
+</ul>
+
+<h4 id="0.3.1">联系我们</h4>
+
+<h3 id="0.4">返回首页</h3>
+<p><a href="/">返回首页</a></p>
+
+</article>
